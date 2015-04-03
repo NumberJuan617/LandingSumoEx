@@ -9,12 +9,27 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <header>
-      <%= render 'layouts/navigation' %>
-    </header>
-    <main role="main">
-       <%= render 'layouts/messages' %>
-       <%= yield %>
-    </main>
+   <div id="scroll-animate">
+    <div id="scroll-animate-main">
+      <div class="wrapper-parallax">
+      
+        
+        <%= render 'layouts/navigation' %>
+        
+        <!--
+        <main role="main">
+          <%= render 'layouts/messages' %>
+        </main>
+        Not being used right now
+        -->
+        
+        <%= yield %>
+     
+
+        <%= render 'layouts/footer' %>
+
+      </div>
+    </div>
+  </div>
   </body>
 </html>
